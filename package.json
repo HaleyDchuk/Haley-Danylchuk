@@ -1,0 +1,26 @@
+{
+  "name": "hed248-final-project",
+  "version": "1.0.0",
+  "description": "WILD web application ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0480-001-fall-2016/hed248-final-project.git"
+  },
+  "author": "Haley Danylchuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0480-001-fall-2016/hed248-final-project/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0480-001-fall-2016/hed248-final-project#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.6.6",
+    "mongoose-url-slugs": "^0.2.1"
+  }
+}

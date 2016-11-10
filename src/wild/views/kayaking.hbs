@@ -1,0 +1,30 @@
+
+
+
+<h1> HELLO WECOME TO SEA KAYAKING PAGE </h1>
+
+<form method = 'POST' action = '/addKayaking'> 
+Name: <input type = 'text' name = 'kayakName'> 
+Quantity: <input type = 'text' name = 'kayakQuantity'>
+Price: <input type = 'text' name = 'kayakPrice'> 
+Description: <input type = 'text' name = 'kayakDescription'>
+URL: <input type = 'text' name = 'kayakUrl'> 
+<input type = 'submit' value = 'Add Kayak Item'> 
+</form>
+
+{{#each kayakList}}
+
+{{#each kayak_equipment}}
+<p>{{this.name}}</p>
+<p> {{this.quantity}} </p>
+<p> {{this.price}} </p>
+<p> {{this.description}} </p>
+<img src = {{this.url}} style="width:128px;height:128px;"> 
+
+{{/each}}
+{{/each}}
+
+
+
+
+
