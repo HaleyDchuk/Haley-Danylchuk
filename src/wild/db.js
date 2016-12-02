@@ -38,7 +38,7 @@ var DestinationList = new mongoose.Scheme({
 mongoose.model('Kayak_Item', Kayak_Item); 
 mongoose.model('Kayak_List', Kayak_List); 
 mongoose.model('BackpackItem', Backpack_Item); 
-mongoose.model('BackpackList', Backpack_Item); 
+mongoose.model('BackpackList', Backpack_List); 
 mongoose.model('Desintation', Destination); 
 mongoose.model('DesintationList', DestinationList); 
 
