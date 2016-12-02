@@ -13,34 +13,34 @@ var KayakList = new mongoose.Schema({
 	kayakEquipment: [KayakItem]
 }); 
 
-var BackpackItem = new mongoose.Schema({
-	name: String, 
-	quantity: Number, 
-	price: String, 
-	description: String, 
-	url: String 
-}); 
+// var BackpackItem = new mongoose.Schema({
+// 	name: String, 
+// 	quantity: Number, 
+// 	price: String, 
+// 	description: String, 
+// 	url: String 
+// }); 
 
-var BackpackList = new mongoose.Scheme({
-	backpackEquipment: [BackpackItem]
-}); 
+// var BackpackList = new mongoose.Scheme({
+// 	backpackEquipment: [BackpackItem]
+// }); 
 
-var Destination = new mongoose.Schema({
-	location: String, 
-	description: String, 
-	url: String
-}); 
+// var Destination = new mongoose.Schema({
+// 	location: String, 
+// 	description: String, 
+// 	url: String
+// }); 
 
-var DestinationList = new mongoose.Scheme({
-	places: [Destination]
-}); 
+// var DestinationList = new mongoose.Scheme({
+// 	places: [Destination]
+// }); 
 
 mongoose.model('Kayak_Item', Kayak_Item); 
 mongoose.model('Kayak_List', Kayak_List); 
-mongoose.model('BackpackItem', Backpack_Item); 
-mongoose.model('BackpackList', Backpack_List); 
-mongoose.model('Desintation', Destination); 
-mongoose.model('DesintationList', DestinationList); 
+// mongoose.model('BackpackItem', Backpack_Item); 
+// mongoose.model('BackpackList', Backpack_List); 
+// mongoose.model('Desintation', Destination); 
+// mongoose.model('DesintationList', DestinationList); 
 
 
 // is the environment variable, NODE_ENV, set to PRODUCTION? 
