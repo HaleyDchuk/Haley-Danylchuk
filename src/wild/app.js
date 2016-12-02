@@ -20,8 +20,12 @@ require('./db');
 app.use(router); 
 
 var mongoose = require('mongoose'); 
-var Kayak_List = mongoose.model('Kayak_List'); 
-var Kayak_Item = mongoose.model('Kayak_Item'); 
+var KayakList = mongoose.model('Kayak_List'); 
+var KayakItem = mongoose.model('Kayak_Item'); 
+var BackpackList = mongoose.model('Backpack_List'); 
+var BackpackItem = mongoose.model('Backpack_Item'); 
+var KayakList = mongoose.model('Kayak_List'); 
+var KayakItem = mongoose.model('Kayak_Item'); 
 
 
 
@@ -48,7 +52,7 @@ router.get('/equipment', function(req, res){
 
 router.get('/kayaking', function(req, res){
 	
-	Kayak_List.find(function(err, kayakList, count){
+	KayakList.find(function(err, kayakList, count){
 		console.log("all of the equipment: "); 
 		console.log(kayakList); 
 		res.render('kayaking', {
@@ -61,11 +65,23 @@ router.get('/kayaking', function(req, res){
 }); 
 
 router.get('/backpacking', function(req, res){
-	res.render('backpacking'); 
+	BackpackList.find(function(err, backpackList, count){
+		console.log("all of the backpack equipment: "); 
+		console.log(backpackList); 
+		res.render('backpacking', {
+			backpackList: backpackList
+		}); 
+	}); 
 }); 
 
 router.get('/destinations', function(req, res){
-	res.render('destinations'); 
+	DestinationList.find(function(err, destinationList, count){
+		console.log("all of the destinations: "); 
+		console.log(destinationList); 
+		res.render('destinations', {
+			destinationList: destinationList
+		}); 
+	}); 
 
 }); 
 
@@ -92,8 +108,40 @@ router.post('/addKayaking', function(req, res){
 		console.log(newKayakItem); 
 
 	}
-	var kayak = new Kayak_List ({
-		kayak_equipment: newKayakItem
+	var kayak = new KayakList ({
+		kayakEquipment: newKayakItem
+		
+	})
+
+	kayak.save(function(err, kayakItem, count){
+
+		console.log("SUCCESS"); 
+		res.redirect('/kayaking'); 
+	});
+}); 
+
+
+router.post('/addBackpacking', function(req, res){
+	var x; 
+	var newBackpackItem = []; 
+	if(req.body.backpackName !== undefined){
+		var backpackItemObj = {
+			name: req.body.backpackName,  
+			quantity: req.body.backpackQuantity,
+			price: req.body.backpackPrice, 
+			description: req.body.backpackDescription,
+			url: req.body.backpackUrl 
+
+		}; 
+
+		newKayakItem.push(kayakItemObj); 
+
+		console.log("THIS IS ADDING TO THE KAYAK LIST"); 
+		console.log(newKayakItem); 
+
+	}
+	var kayak = new KayakList ({
+		kayakEquipment: newKayakItem
 		
 	})
 
