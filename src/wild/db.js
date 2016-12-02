@@ -1,7 +1,7 @@
 var mongoose = require('mongoose'); 
 var URLSlugs = require('mongoose-url-slugs'); 
 
-var Kayak_Item = new mongoose.Schema({
+var KayakItem = new mongoose.Schema({
 	name: String, 
 	quantity: Number, 
 	price: String, 
@@ -9,16 +9,20 @@ var Kayak_Item = new mongoose.Schema({
 	url: String 
 }); 
 
-var Kayak_List = new mongoose.Schema({
-	kayak_equipment: [Kayak_Item]
+var KayakList = new mongoose.Schema({
+	kayakEquipment: [KayakItem]
 }); 
 
-var Backpack_Item = new mongoose.Schema({
+var BackpackItem = new mongoose.Schema({
 	name: String, 
 	quantity: Number, 
 	price: String, 
 	description: String, 
 	url: String 
+}); 
+
+var BackpackList = new mongoose.Scheme({
+	backpackEquipment: [BackpackItem]
 }); 
 
 var Destination = new mongoose.Schema({
@@ -27,10 +31,16 @@ var Destination = new mongoose.Schema({
 	url: String
 }); 
 
+var DestinationList = new mongoose.Scheme({
+	places: [Destination]
+}); 
+
 mongoose.model('Kayak_Item', Kayak_Item); 
 mongoose.model('Kayak_List', Kayak_List); 
-mongoose.model('Backpack_Item', Backpack_Item); 
+mongoose.model('BackpackItem', Backpack_Item); 
+mongoose.model('BackpackList', Backpack_Item); 
 mongoose.model('Desintation', Destination); 
+mongoose.model('DesintationList', DestinationList); 
 
 
 // is the environment variable, NODE_ENV, set to PRODUCTION? 
@@ -54,5 +64,3 @@ if (process.env.NODE_ENV == 'PRODUCTION') {
 }
 
 mongoose.connect(dbconf); 
-
-//mongoose.connect('mongodb://localhost/final_proj'); 
