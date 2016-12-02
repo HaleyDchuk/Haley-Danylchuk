@@ -1,1 +1,25 @@
 <h1> HI! WELCOME TO THE BACKPACKING PAGE </h1>
+
+<h1> HI! WELCOME TO THE BACKPACKING PAGE </h1>
+<h1> HI AGAIN! </h1>
+
+<form method = 'POST' action = '/addBackpacking'> 
+Name: <input type = 'text' name = 'backpackName'> 
+Quantity: <input type = 'text' name = 'backpackQuantity'>
+Price: <input type = 'text' name = 'backpackPrice'> 
+Description: <input type = 'text' name = 'backpackDescription'>
+URL: <input type = 'text' name = 'backpackkUrl'> 
+<input type = 'submit' value = 'Add Backpack Item'> 
+</form>
+
+{{#each backpackList}}
+
+{{#each backpack_equipment}}
+<p>{{this.name}}</p>
+<p> {{this.quantity}} </p>
+<p> {{this.price}} </p>
+<p> {{this.description}} </p>
+<img src = {{this.url}} style="width:128px;height:128px;"> 
+
+{{/each}}
+{{/each}}
