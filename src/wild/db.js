@@ -40,8 +40,8 @@ mongoose.model('KayakItem', KayakItem);
 mongoose.model('KayakList', KayakList); 
 mongoose.model('BackpackItem', BackpackItem); 
 mongoose.model('BackpackList', BackpackList); 
-mongoose.model('Desintation', Destination); 
-mongoose.model('DesintationList', DestinationList); 
+mongoose.model('Destination', Destination); 
+mongoose.model('DestinationList', DestinationList); 
 
 
 // is the environment variable, NODE_ENV, set to PRODUCTION? 
