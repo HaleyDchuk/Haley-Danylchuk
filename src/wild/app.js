@@ -75,6 +75,9 @@ router.get('/backpacking', function(req, res){
 }); 
 
 router.get('/destinations', function(req, res){
+	
+	var typeFiltered = req.query.destinationType; 
+	if(typeFiltered == undefined){
 	DestinationList.find(function(err, destinationList, count){
 		console.log("all of the destinations: "); 
 		console.log(destinationList); 
@@ -82,6 +85,16 @@ router.get('/destinations', function(req, res){
 			destinationList: destinationList
 		}); 
 	}); 
+	} 
+	else{
+		DestinationList.find({'type': typeFiltered}, function(err, destinationList, count){
+			res.render('destinations', {
+				destinationList: destinationList
+			}); 
+		});
+		
+		
+	}
 
 }); 
 
