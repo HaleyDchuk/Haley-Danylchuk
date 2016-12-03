@@ -22,8 +22,8 @@ app.use(router);
 var mongoose = require('mongoose'); 
 var KayakList = mongoose.model('KayakList'); 
 var KayakItem = mongoose.model('KayakItem'); 
-// var BackpackList = mongoose.model('Backpack_List'); 
-// var BackpackItem = mongoose.model('Backpack_Item'); 
+var BackpackList = mongoose.model('BackpackList'); 
+var BackpackItem = mongoose.model('BackpackItem'); 
 // var KayakList = mongoose.model('Kayak_List'); 
 // var KayakItem = mongoose.model('Kayak_Item'); 
 
@@ -121,36 +121,36 @@ router.post('/addKayaking', function(req, res){
 }); 
 
 
-// router.post('/addBackpacking', function(req, res){
-// 	var x; 
-// 	var newBackpackItem = []; 
-// 	if(req.body.backpackName !== undefined){
-// 		var backpackItemObj = {
-// 			name: req.body.backpackName,  
-// 			quantity: req.body.backpackQuantity,
-// 			price: req.body.backpackPrice, 
-// 			description: req.body.backpackDescription,
-// 			url: req.body.backpackUrl 
+router.post('/addBackpacking', function(req, res){
+	var x; 
+	var newBackpackItem = []; 
+	if(req.body.backpackName !== undefined){
+		var backpackItemObj = {
+			name: req.body.backpackName,  
+			quantity: req.body.backpackQuantity,
+			price: req.body.backpackPrice, 
+			description: req.body.backpackDescription,
+			url: req.body.backpackUrl 
 
-// 		}; 
+		}; 
 
-// 		newKayakItem.push(kayakItemObj); 
+		newBackpackItem.push(backpackItemObj); 
 
-// 		console.log("THIS IS ADDING TO THE KAYAK LIST"); 
-// 		console.log(newKayakItem); 
+		console.log("THIS IS ADDING TO THE BACKPACK LIST"); 
+		console.log(newBackpackItem); 
 
-// 	}
-// 	var kayak = new KayakList ({
-// 		kayakEquipment: newKayakItem
+	}
+	var backpack = new BackpackList ({
+		backpackEquipment: newBackpackItem
 		
-// 	})
+	})
 
-// 	kayak.save(function(err, kayakItem, count){
+	backpack.save(function(err, backpackItem, count){
 
-// 		console.log("SUCCESS"); 
-// 		res.redirect('/kayaking'); 
-// 	});
-// }); 
+		console.log("SUCCESS"); 
+		res.redirect('/backpacking'); 
+	});
+}); 
 
 
 
