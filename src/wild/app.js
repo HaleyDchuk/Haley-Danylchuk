@@ -24,8 +24,8 @@ var KayakList = mongoose.model('KayakList');
 var KayakItem = mongoose.model('KayakItem'); 
 var BackpackList = mongoose.model('BackpackList'); 
 var BackpackItem = mongoose.model('BackpackItem'); 
-// var KayakList = mongoose.model('Kayak_List'); 
-// var KayakItem = mongoose.model('Kayak_Item'); 
+var DestinationList = mongoose.model('DestinationList'); 
+var Destination = mongoose.model('Destination'); 
 
 
 
