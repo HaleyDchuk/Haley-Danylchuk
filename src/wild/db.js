@@ -21,7 +21,7 @@ var BackpackItem = new mongoose.Schema({
 	url: String 
 }); 
 
-var BackpackList = new mongoose.Scheme({
+var BackpackList = new mongoose.Schema({
 	backpackEquipment: [BackpackItem]
 }); 
 
