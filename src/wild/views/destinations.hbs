@@ -13,9 +13,11 @@ URL: <input type = 'text' name = 'destinationUrl'>
 {{#each places}}
 <p>{{this.location}}</p>
 <p> {{this.description}} </p>
+<img src = {{this.url}} style="width:148px;height:128px;"> 
+
 <p> {{this.type}} </p>
 
-<img src = {{this.url}} style="width:128px;height:128px;"> 
+
 
 {{/each}}
 {{/each}}
