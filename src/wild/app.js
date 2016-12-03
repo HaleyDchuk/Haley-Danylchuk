@@ -153,6 +153,37 @@ router.post('/addBackpacking', function(req, res){
 }); 
 
 
+router.post('/addDestination', function(req, res){
+	var x; 
+	var newDestinationItem = []; 
+	if(req.body.destinationName !== undefined){
+		var destinationObj = {
+			location: req.body.destinationLocation,  
+			description: req.body.destinationDescription,
+			url: req.body.destinationUrl, 
+			type: req.body.destinationType
+
+		}; 
+
+		newDestinationItem.push(destinationObj); 
+
+		console.log("THIS IS ADDING TO THE DESTINATION LIST"); 
+		console.log(newDestinationItem); 
+
+	}
+	var destination = new DestinationList ({
+		places: newDestinationItem
+		
+	})
+
+	destination.save(function(err, destinationItem, count){
+
+		console.log("SUCCESS"); 
+		res.redirect('/destinations'); 
+	});
+}); 
+
+
 
 app.listen(14892);
 
