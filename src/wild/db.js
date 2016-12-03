@@ -13,17 +13,17 @@ var KayakList = new mongoose.Schema({
 	kayakEquipment: [KayakItem]
 }); 
 
-// var BackpackItem = new mongoose.Schema({
-// 	name: String, 
-// 	quantity: Number, 
-// 	price: String, 
-// 	description: String, 
-// 	url: String 
-// }); 
+var BackpackItem = new mongoose.Schema({
+	name: String, 
+	quantity: Number, 
+	price: String, 
+	description: String, 
+	url: String 
+}); 
 
-// var BackpackList = new mongoose.Scheme({
-// 	backpackEquipment: [BackpackItem]
-// }); 
+var BackpackList = new mongoose.Scheme({
+	backpackEquipment: [BackpackItem]
+}); 
 
 // var Destination = new mongoose.Schema({
 // 	location: String, 
@@ -37,8 +37,8 @@ var KayakList = new mongoose.Schema({
 
 mongoose.model('KayakItem', KayakItem); 
 mongoose.model('KayakList', KayakList); 
-// mongoose.model('BackpackItem', Backpack_Item); 
-// mongoose.model('BackpackList', Backpack_List); 
+mongoose.model('BackpackItem', BackpackItem); 
+mongoose.model('BackpackList', BackpackList); 
 // mongoose.model('Desintation', Destination); 
 // mongoose.model('DesintationList', DestinationList); 
 
