@@ -76,8 +76,8 @@ router.get('/backpacking', function(req, res){
 
 router.get('/destinations', function(req, res){
 	
-	var typeFiltered = req.query.destinationType; 
-	if(typeFiltered == undefined){
+	var destType = req.query.typeFiltered; 
+	if(destType == undefined){
 	DestinationList.find(function(err, destinationList, count){
 		console.log("all of the destinations: "); 
 		console.log(destinationList); 
@@ -87,7 +87,7 @@ router.get('/destinations', function(req, res){
 	}); 
 	} 
 	else{
-		DestinationList.find({'type': typeFiltered}, function(err, destinationList, count){
+		DestinationList.find({'type': destType}, function(err, destinationList, count){
 			res.render('destinations', {
 				destinationList: destinationList
 			}); 
