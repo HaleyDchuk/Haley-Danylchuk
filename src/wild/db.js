@@ -25,22 +25,23 @@ var BackpackList = new mongoose.Schema({
 	backpackEquipment: [BackpackItem]
 }); 
 
-// var Destination = new mongoose.Schema({
-// 	location: String, 
-// 	description: String, 
-// 	url: String
-// }); 
+var Destination = new mongoose.Schema({
+	location: String, 
+	description: String, 
+	url: String, 
+	type: String
+}); 
 
-// var DestinationList = new mongoose.Scheme({
-// 	places: [Destination]
-// }); 
+var DestinationList = new mongoose.Schema({
+	places: [Destination]
+}); 
 
 mongoose.model('KayakItem', KayakItem); 
 mongoose.model('KayakList', KayakList); 
 mongoose.model('BackpackItem', BackpackItem); 
 mongoose.model('BackpackList', BackpackList); 
-// mongoose.model('Desintation', Destination); 
-// mongoose.model('DesintationList', DestinationList); 
+mongoose.model('Desintation', Destination); 
+mongoose.model('DesintationList', DestinationList); 
 
 
 // is the environment variable, NODE_ENV, set to PRODUCTION? 
