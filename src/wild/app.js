@@ -156,7 +156,7 @@ router.post('/addBackpacking', function(req, res){
 router.post('/addDestination', function(req, res){
 	var x; 
 	var newDestinationItem = []; 
-	if(req.body.destinationName !== undefined){
+	if(req.body.destinationLocation !== undefined){
 		var destinationObj = {
 			location: req.body.destinationLocation,  
 			description: req.body.destinationDescription,
@@ -171,12 +171,12 @@ router.post('/addDestination', function(req, res){
 		console.log(newDestinationItem); 
 
 	}
-	var destination = new DestinationList ({
+	var dest = new DestinationList ({
 		places: newDestinationItem
 		
 	})
 
-	destination.save(function(err, destinationItem, count){
+	dest.save(function(err, destinationItem, count){
 
 		console.log("SUCCESS"); 
 		res.redirect('/destinations'); 
