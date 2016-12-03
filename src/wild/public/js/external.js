@@ -1,9 +1,26 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-	var yourScore = document.createElement("h3"); 
-	var text = document.createTextNode("hello this is a test"); 
-	yourScore.appendChild(text); 
-	document.body.appendChild(yourScore); 
+	
+
+	var kayakButton = document.getElementById("kayakSubmit"); 
+	kayakButton.addEventListener('click', kayakValidate); 
+
+	function kayakValidate(event){
+		var kName = document.getElementById('kayakName').value; 
+		var kQuantity = document.getElementById('kayakQuantity').value; 
+		var kPrice = document.getElementById('kayakPrice').value; 
+		var kDescription = document.getElementById('kayakDescription').value; 
+		var kUrl = document.getElementById('kayakUrl').value; 
+
+		if(kName == "" || kQuantity == "" || kPrice == "" || kDescription == "" || kUrl == ""){
+			var error = document.createElement('h4'); 
+			var message = document.createTextNode("Please fill out all of the fields before submitting"); 
+			error.appendChild(message); 
+			document.body.appendChild(error); 
+
+
+		}
+	}
 
 
     console.log("DOM fully loaded and parsed");
