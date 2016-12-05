@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var kDescription = document.getElementById('kayakDescription').value; 
 		var kUrl = document.getElementById('kayakUrl').value; 
 
-		if(kName == "" || kQuantity == "" || kPrice == "" || kDescription == "" || kUrl == ""){
+		if(kName == "" || kQuantity == "" || kPrice == "" || kDescription == "" || kUrl == "" || kName == null){
 			var error = document.createElement('h4'); 
 			var message = document.createTextNode("Please fill out all of the fields before submitting"); 
 			error.appendChild(message); 
