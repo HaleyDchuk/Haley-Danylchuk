@@ -19,11 +19,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var kUrl = document.getElementById('kayakUrl').value; 
 
 		if(kName == "" || kQuantity == "" || kPrice == "" || kDescription == "" || kUrl == "" || kName == null){
-			var error = document.createElement('h4'); 
-			var message = document.createTextNode("Please fill out all of the fields before submitting"); 
-			error.appendChild(message); 
-			document.body.appendChild(error); 
+			console.log("we made it in the if!"); 
+			var error = document.getElementById('error-message'); 
+			//var message = document.createTextNode("Please fill out all of the fields before submitting"); 
+			//error.appendChild(message); 
+			
+			error.innerHTML = "Please fill out all of the fields before submitting"; 
+			var element = document.getElementById('error-message').style.display = "inline"; 
 
+			
 
 		}
 	}
