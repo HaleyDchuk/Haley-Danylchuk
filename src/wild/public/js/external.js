@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	kayakButton.addEventListener('click', kayakValidate); 
 
 	function kayakValidate(event){
-		event.preventDefault(); 
+		
 		console.log("event"); 
 		console.log(event); 
 		 
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var kUrl = document.getElementById('kayakUrl').value; 
 
 		if(kName == "" || kQuantity == "" || kPrice == "" || kDescription == "" || kUrl == "" || kName == null){
+			event.preventDefault(); 
 			console.log("we made it in the if!"); 
 			var error = document.getElementById('error-message'); 
 			//var message = document.createTextNode("Please fill out all of the fields before submitting"); 
