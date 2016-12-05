@@ -408,25 +408,39 @@
 
 #kayakUrl {
 	padding-right: 200px;
-	padding-top: 30px; 
+	
 	color: red;
 }
 
 #kayakPrice{
-       padding-top: 30px;	
+       	
 }
 
 #kayakDescription{
-	padding-top: 30px; 	
+		
 }
 
 #kayakName{
-	padding-top: 20px;	
+		
 }
 
 #kayakQuantity{
-	padding-top: 20px; 	
+	 	
 }
 
+	.contact-form input[type="text"]{
+		/*border: 1px solid #E8E8E8;*/
+		border: 1px solid red;
+		padding: 8px 14px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
 
+	.contact-form textarea{
+		border: 5px solid #E8E8E8;
+		padding: 8px 14px;
+		width: 100%;
+		margin-bottom: 20px;
+
+	}
 
