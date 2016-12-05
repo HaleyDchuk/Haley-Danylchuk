@@ -434,6 +434,7 @@
 		padding: 8px 14px;
 		width: 100%;
 		margin-bottom: 20px;
+		text-align: center;
 	}
 
 	.submit-form textarea{
@@ -441,6 +442,7 @@
 		padding: 8px 14px;
 		width: 100%;
 		margin-bottom: 20px;
+		text-align: center; 
 
 	}
 
@@ -464,3 +466,4 @@
 .pageIntro{
 	text-align: center; 	
 }
+
