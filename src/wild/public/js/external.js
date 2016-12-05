@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if(bName == "" || bQuantity == "" || bPrice == "" || bDescription == "" || bUrl == "" || bName == null){
 			event.preventDefault(); 
 			console.log("we made it in the if for backpacking page!"); 
-			var error = document.getElementById('error-message-backpack'); 
+			var backpackError = document.getElementById('error-message-backpack'); 
 			//var message = document.createTextNode("Please fill out all of the fields before submitting"); 
 			//error.appendChild(message); 
 			
-			error.innerHTML = "Please fill out all of the fields before submitting"; 
+			backpackError.innerHTML = "Please fill out all of the fields before submitting"; 
 			var element = document.getElementById('error-message-backpack').style.display = "inline"; 
 
 			
