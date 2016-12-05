@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
-	
+	var test = document.createElement('h4'); 
+			var mes = document.createTextNode("TEST"); 
+			test.appendChild(mess); 
+			document.body.appendChild(test); 
 
 	var kayakButton = document.getElementById("kayakSubmit"); 
 	kayakButton.addEventListener('click', kayakValidate); 
