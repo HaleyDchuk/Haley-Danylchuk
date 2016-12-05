@@ -34,7 +34,9 @@ URL:         <input type = 'text' id = 'kayakUrl' name = 'kayakUrl'>
 <div class = 'items'>
 {{#each kayakList}}
 
+
 {{#each kayakEquipment}}
+<div class = 'eachItem'> 
 <p>  {{this.quantity}} {{this.name}} {{this.price}} </p>
 
 
@@ -43,6 +45,7 @@ URL:         <input type = 'text' id = 'kayakUrl' name = 'kayakUrl'>
 <p> {{this.description}} </p>
 
 {{/each}}
+</div>
 {{/each}}
 
 </div>
