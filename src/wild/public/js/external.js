@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	kayakButton.addEventListener('click', kayakValidate); 
 
 	function kayakValidate(event){
+		event.preventDefault(); 
 		console.log("event"); 
 		console.log(event); 
 		 
