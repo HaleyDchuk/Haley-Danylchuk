@@ -19,7 +19,8 @@
 	}
 
 .pageDescription{
-	width: 30px; 
+	width: 100px; 
+	padding-left: 100px; 
 }
 
 	a { 
