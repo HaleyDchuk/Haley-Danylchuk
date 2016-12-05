@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	var test = document.createElement('h4'); 
-			var mes = document.createTextNode("TEST"); 
+			var mess = document.createTextNode("TEST"); 
 			test.appendChild(mess); 
 			document.body.appendChild(test); 
 
