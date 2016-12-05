@@ -403,10 +403,30 @@
 		-ms-transition: all 0.2s ease-in-out;
 		-o-transition: all 0.2s ease-in-out;
 		transition: all 0.2s ease-in-out;
+		padding-top: 20px; 
 	}
 
 #kayakUrl {
-	padding-right: 100px;
+	padding-right: 200px;
+	padding-top: 30px; 
 	color: red;
 }
+
+#kayakPrice{
+       padding-top: 30px;	
+}
+
+#kayakDescription{
+	padding-top: 30px; 	
+}
+
+#kayakName{
+	padding-top: 20px;	
+}
+
+#kayakQuantity{
+	padding-top: 20px; 	
+}
+
+
 
