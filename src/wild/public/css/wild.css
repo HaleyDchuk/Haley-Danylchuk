@@ -18,16 +18,18 @@
 		background-color: #fff;
 	}
 
-.highlightIntro{
-	overflow: hidden;
-    	
-}
 
 .pageDescription{
 	
 	padding-left: 115px; 
 	padding-bottom: 50px; 
 }
+
+.highlightIntro{
+	overflow: hidden;
+    	
+}
+
 
 	a { 
 		color: #000;
