@@ -450,9 +450,13 @@
 }
 
 .eachItem{
-float: left; 	
+	float: left; 	
 	padding-right: 40px;
 	padding-left: 40px; 
 	padding-top: 40px; 
 	padding-bottom: 40px; 
+}
+
+.otherPages{
+	padding-top: 200px;	
 }
