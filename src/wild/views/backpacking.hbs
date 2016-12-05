@@ -1,23 +1,47 @@
 <h1> HI! WELCOME TO THE BACKPACKING PAGE </h1>
 
-
-<form method = 'POST' action = '/addBackpacking'> 
-Name: <input type = 'text' name = 'backpackName'> 
-Quantity: <input type = 'text' name = 'backpackQuantity'>
-Price: <input type = 'text' name = 'backpackPrice'> 
-Description: <input type = 'text' name = 'backpackDescription'>
-URL: <input type = 'text' name = 'backpackUrl'> 
-<input type = 'submit' value = 'Add Backpack Item'> 
+<div class = 'container'> 
+<div class="col-sm-7 col-sm-offset-1">
+<form method = 'POST' class="submit-form" name="submit-form" action = '/addBackpacking'>
+<div class="row">
+<div class="col-sm-6"> 
+Name:        <input type = 'text'  id = "backpackName" name = 'backpackName'> 
+</div>
+<div class="col-sm-6">
+Quantity:    <input type = 'text' id = 'backpackQuantity' name = 'backpackQuantity'>
+</div>
+<div class="col-sm-6">
+Price:       <input type = 'text' id = 'backpackPrice' name = 'backpackPrice'> 
+</div>
+<div class="col-sm-6">
+Description: <input type = 'text' id = 'backpackDescription' name = 'backpackDescription'>
+</div>
+<div class="col-sm-12">
+URL:         <input type = 'text' id = 'backpackUrl' name = 'backpackUrl'> 
+</div>
+<div class="col-sm-12">
+<input type = 'submit' id = 'backpackSubmit' value = 'Add Backpack Item'> 
+</div>
+</div>
 </form>
+</div>
+</div>
 
+
+
+
+
+<p id = "error-message-backpack"> </p>
+
+<div class = 'items'> 
 {{#each backpackList}}
 
 {{#each backpackEquipment}}
-<p>{{this.name}}</p>
-<p> {{this.quantity}} </p>
-<p> {{this.price}} </p>
-<p> {{this.description}} </p>
+<div class = 'eachItem'> 
+<p> {{this.quantity}} {{this.name}} {{this.price}} </p>
 <img src = {{this.url}} style="width:128px;height:128px;"> 
-
+<p> {{this.description}} </p>
 {{/each}}
+</div>
 {{/each}}
+</div> 
