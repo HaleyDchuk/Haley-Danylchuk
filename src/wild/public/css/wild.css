@@ -471,6 +471,7 @@ div.thisForm
 {
     display: block;
     text-align: center;
+	padding-left: 400px; 
 }
 form
 {
