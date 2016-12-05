@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	kayakButton.addEventListener('click', kayakValidate); 
 
 	function kayakValidate(event){
-		event.preventDefault(); 
+		 
 		var kName = document.getElementById('kayakName').value; 
 		var kQuantity = document.getElementById('kayakQuantity').value; 
 		var kPrice = document.getElementById('kayakPrice').value; 
