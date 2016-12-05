@@ -18,6 +18,13 @@
 		background-color: #fff;
 	}
 
+.highlightIntro{
+	overflow: hidden;
+    max-width: 100px;
+    margin: 50px auto;
+    padding: 20px;	
+}
+
 .pageDescription{
 	
 	padding-left: 115px; 
