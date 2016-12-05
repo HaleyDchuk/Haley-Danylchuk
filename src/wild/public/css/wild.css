@@ -405,3 +405,7 @@
 		transition: all 0.2s ease-in-out;
 	}
 
+#kayakUrl {
+	padding-right: 100px;
+}
+
