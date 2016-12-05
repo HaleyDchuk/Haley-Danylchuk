@@ -446,5 +446,6 @@
 
 .items{
 	padding-left: 50px;	
+	float: left; 
 }
 
