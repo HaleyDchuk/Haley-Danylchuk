@@ -427,9 +427,7 @@
 	}
 
 #kayakUrl {
-	padding-right: 200px;
 	
-	color: red;
 }
 
 #kayakPrice{
@@ -448,16 +446,15 @@
 	 	
 }
 
-	.submit-form input[type="text"]{
+.submit-form input[type="text"]{
 		border: 1px solid #383838;
-		
-		padding: 8px 14px;
+		padding: 30px 20px;
 		width: 100%;
 		margin-bottom: 20px;
 		
 	}
 
-	.submit-form textarea{
+.submit-form textarea{
 		border: 5px solid #E8E8E8;
 		padding: 8px 14px;
 		width: 100%;
