@@ -485,6 +485,7 @@
 }
 
 .pageIntro{
+	display: inline; 
 	padding-left: 115px; 	
 	background: yellow; 
 }
