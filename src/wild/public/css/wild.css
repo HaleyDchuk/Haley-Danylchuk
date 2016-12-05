@@ -21,6 +21,7 @@
 .pageDescription{
 	
 	padding-left: 115px; 
+	padding-bottom: 50px; 
 }
 
 	a { 
@@ -493,5 +494,9 @@ div.thisForm
    
 }
 
-
+.error-message{
+	padding-left: 115px; 
+	background: yellow; 
+	color: black; 
+}
 
