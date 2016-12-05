@@ -494,7 +494,13 @@ div.thisForm
    
 }
 
-.error-message{
+#error-message{
+	padding-left: 115px; 
+	background: yellow; 
+	color: black; 
+}
+
+#error-message-backpack{
 	padding-left: 115px; 
 	background: yellow; 
 	color: black; 
