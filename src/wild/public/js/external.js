@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
 	var test = document.createElement('h4'); 
-			var mess = document.createTextNode("TEST"); 
+			var mess = document.createTextNode("TESTING"); 
 			test.appendChild(mess); 
 			document.body.appendChild(test); 
 
@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	kayakButton.addEventListener('click', kayakValidate); 
 
 	function kayakValidate(event){
+		console.log("event"); 
+		console.log(event); 
 		 
 		var kName = document.getElementById('kayakName').value; 
 		var kQuantity = document.getElementById('kayakQuantity').value; 
