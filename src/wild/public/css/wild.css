@@ -467,8 +467,10 @@
 	text-align: center; 	
 }
 
-form {
+.thisForm {
     display: inline-block;
     text-align: center;
+	
+	
     }
 
