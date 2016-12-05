@@ -3,14 +3,32 @@
 
 <h1> HELLO WECOME TO SEA KAYAKING PAGE </h1>
 
-<form method = 'POST' action = '/addKayaking'> 
-Name: <input type = 'text' name = 'kayakName'> 
-Quantity: <input type = 'text' name = 'kayakQuantity'>
-Price: <input type = 'text' name = 'kayakPrice'> 
-Description: <input type = 'text' name = 'kayakDescription'>
-URL: <input type = 'text' name = 'kayakUrl'> 
-<input type = 'submit' value = 'Add Kayak Item'> 
+<div class = 'container'> 
+<div class="col-sm-7 col-sm-offset-1">
+<form method = 'POST' action = '/addKayaking'>
+<div class="row">
+<div class="col-sm-6"> 
+Name:        <input type = 'text' name = 'name' id = "kayakName" name = 'kayakName'> 
+</div>
+<div class="col-sm-6">
+Quantity:    <input type = 'text' name = 'quantity' id = 'kayakQuantity' name = 'kayakQuantity'>
+</div>
+<div class="col-sm-6">
+Price:       <input type = 'text' name = 'price' id = 'kayak price' name = 'kayakPrice'> 
+</div>
+<div class="col-sm-6">
+Description: <input type = 'text' id = 'kayakDescription' name = 'kayakDescription'>
+</div>
+<div class="col-sm-12">
+URL:         <input type = 'text' id = 'kayakDescription' name = 'kayakUrl'> 
+</div>
+<div class="col-sm-12">
+<input type = 'submit' class = 'btn-submit' value = 'Add Kayak Item'> 
+</div>
+</div>
 </form>
+</div>
+</div>
 
 {{#each kayakList}}
 
