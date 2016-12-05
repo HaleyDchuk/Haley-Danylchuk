@@ -450,7 +450,10 @@
 		border: 1px solid #383838;
 		padding: 8px 14px;
 		width: 100%;
-		margin-bottom: 200px;
+		margin-bottom: 20px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
 		
 	}
 
