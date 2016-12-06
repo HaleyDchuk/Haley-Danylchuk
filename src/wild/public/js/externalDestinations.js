@@ -1,5 +1,28 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+	var mapContainer = document.getElementById('map');
 
+function init() {
+  var mapOptions = {
+    center: new google.maps.LatLng(40.7308, -73.9973), // WS Park
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    zoom: 18,
+    panControl: false,
+    streetViewControl: false,
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    }
+  };
+  var campusMap = new google.maps.Map(mapContainer, mapOptions);
+}
+
+function loadScript() {
+  var script = document.createElement('script');
+  script.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+  document.body.appendChild(script);
+}
+
+window.addEventListener('load', loadScript, false);
 
 
 	
