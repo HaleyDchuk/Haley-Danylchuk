@@ -30,7 +30,8 @@
 }
 
 #month{
-	padding-left: 115px; 	
+	padding-left: 115px; 
+	float: none; 
 }
 
 #map {
