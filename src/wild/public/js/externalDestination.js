@@ -3,8 +3,8 @@
 
 function init() {
   var mapOptions = {
-    center: new google.maps.LatLng(40.7308, -73.9973), // WS Park
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    center: new google.maps.LatLng(28.0000, 113.5000), // Baja, Mexico 
+    mapTypeId: google.maps.MapTypeId.TERRAIN,
     zoom: 18,
     panControl: false,
     streetViewControl: false,
