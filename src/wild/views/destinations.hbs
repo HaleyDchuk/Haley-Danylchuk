@@ -45,21 +45,26 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 </div>
 </div>
 
+<p id = "error-message-destination"> </p>
 
-
+<div class = 'items'> 
 {{#each destinationList}}
 
-{{#each places}}
-<p>{{this.location}}</p>
-<p> {{this.description}} </p>
+{{#each place}}
+<div class = 'eachItem'> 
+<p> {{this.type}} {{this.location}}  </p>
 <img src = {{this.url}} style="width:168px;height:128px;"> 
-
-<p> {{this.type}} </p>
-
-
-
+<p> {{this.description}} </p>
 {{/each}}
+</div>
 {{/each}}
-
 </div> 
+</div> 
+
+<script type="text/javascript" src="../js/externalDestination.js"></script>    <!-- form validation-->
+
+
+
+
+
 
