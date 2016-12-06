@@ -5,7 +5,7 @@ function init() {
   var mapOptions = {
     center: new google.maps.LatLng(-35.231571, 174.261067), // Baja, Mexico 
     mapTypeId: google.maps.MapTypeId.TERRAIN,
-    zoom: 2,
+    zoom: 10,
     panControl: false,
     streetViewControl: false,
     mapTypeControl: true,
