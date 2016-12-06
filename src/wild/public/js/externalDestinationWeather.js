@@ -13,8 +13,12 @@ function loadContent() {
       // Round to nearest integer
       var tempFormatted = Math.round(temperature);
       // Write to page
+      var convert = ((tempFormatted * 9)/5) - 459.67. 
+      
       console.log("temp formated"); 
       console.log(tempFormatted); 
+      console.log("converted"); 
+      console.log(convert); 
       document.querySelector('main').innerHTML = '<p>' + tempFormatted + '°</p>';
     }
   };
