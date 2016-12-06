@@ -81,7 +81,7 @@ router.get('/destinations', function(req, res){
 	console.log(destType); 
 	if(destType == undefined){
 	DestinationList.find(function(err, destinationList, count){
-		console.log("all of the destinations: "); 
+		console.log("all of the destinations not filtered: "); 
 		console.log(destinationList); 
 		res.render('destinations', {
 			destinationList: destinationList
@@ -90,6 +90,8 @@ router.get('/destinations', function(req, res){
 	} 
 	else{
 		DestinationList.find({"type": destType}, function(err, destinationList, count){
+			console.log("all of the destinations filtered: "); 
+		console.log(destinationList); 
 			res.render('destinations', {
 				destinationList: destinationList
 			}); 
