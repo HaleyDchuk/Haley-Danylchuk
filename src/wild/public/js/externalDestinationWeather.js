@@ -13,6 +13,8 @@ function loadContent() {
       // Round to nearest integer
       var tempFormatted = Math.round(temperature);
       // Write to page
+      console.log("temp formated"); 
+      console.log(tempFormatted); 
       document.querySelector('main').innerHTML = '<p>' + tempFormatted + '°</p>';
     }
   };
