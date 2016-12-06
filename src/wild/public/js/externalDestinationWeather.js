@@ -1,4 +1,4 @@
-var contentBtn = document.querySelector('button');
+//var contentBtn = document.querySelector('button');
 
 function loadContent() {
   var xhr = new XMLHttpRequest();
@@ -27,5 +27,5 @@ function loadContent() {
   xhr.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=Paihia,nz&appid=c5ddb19e5df75b259cd0e5aaafc1f2c3", true);
   xhr.send();
 }
-
-contentBtn.addEventListener('click', loadContent, false);
+loadContent(); 
+//contentBtn.addEventListener('click', loadContent, false);
