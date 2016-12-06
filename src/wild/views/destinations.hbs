@@ -12,13 +12,31 @@
 
 <h1> HELLO WECOME TO DESTINATIONS PAGE </h1>
 
-<form method = 'POST' class="submit-form" name="submit-form" action = '/addDestination'> 
-Location: <input type = 'text' name = 'destinationLocation'> 
-Description: <input type = 'text' name = 'destinationDescription'>
-URL: <input type = 'text' name = 'destinationUrl'> 
-(Kayaking or Backpacking): <input type = 'text' name = 'destinationType'> 
-<input type = 'submit' value = 'Add Kayak Item'> 
+<div class = 'thisForm'> 
+<div class = 'container'> 
+<div class="col-sm-7 col-sm-offset-1">
+<form method = 'POST' class="submit-form" name="submit-form" action = '/addDestination'>
+<div class="row">
+<div class="col-sm-6"> 
+Location:        <input type = 'text'  id = "destinationLocation" name = 'destinationLocation'> 
+</div>
+
+<div class="col-sm-6">
+Description: <input type = 'text' id = 'destinationDescription' name = 'destinationDescription'>
+</div>
+<div class="col-sm-12">
+URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'> 
+</div>
+<div class="col-sm-12">
+<input type = 'submit' id = 'destinationSubmit' value = 'Add Destination'> 
+</div>
+</div>
 </form>
+</div>
+</div>
+</div>
+
+
 
 {{#each destinationList}}
 
