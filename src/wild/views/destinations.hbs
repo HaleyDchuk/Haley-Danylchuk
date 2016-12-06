@@ -27,6 +27,8 @@ URL: <input type = 'text' name = 'destinationUrl'>
 <input type = 'submit' value = 'Add Kayak Item'> 
 </form>
 
+
+<!-- 
 {{#each destinationList}}
 
 {{#each places}}
@@ -40,6 +42,31 @@ URL: <input type = 'text' name = 'destinationUrl'>
 
 {{/each}}
 {{/each}}
+
+-->
+
+<p id = "error-message-destination"> </p>
+
+<div class = 'items'> 
+{{#each destinationList}}
+
+{{#each place}}
+<div class = 'eachItem'> 
+<p> {{this.type}} {{this.location}}  </p>
+<img src = {{this.url}} style="width:168px;height:128px;"> 
+<p> {{this.description}} </p>
+{{/each}}
+</div>
+{{/each}}
+</div> 
+</div> 
+
+<div id="map"></div> 
+
+
+
+<script type="text/javascript" src="../js/externalDestination.js"></script>    <!-- form validation-->
+
 
 
 <!-- 
@@ -67,28 +94,7 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 </div>
 </div>
 </div>
-
-<p id = "error-message-destination"> </p>
-
-<div class = 'items'> 
-{{#each destinationList}}
-
-{{#each place}}
-<div class = 'eachItem'> 
-<p> {{this.type}} {{this.location}}  </p>
-<img src = {{this.url}} style="width:168px;height:128px;"> 
-<p> {{this.description}} </p>
-{{/each}}
-</div>
-{{/each}}
-</div> 
-</div> 
-
-<div id="map"></div> 
-
---> 
-
-<script type="text/javascript" src="../js/externalDestination.js"></script>    <!-- form validation-->
+-->
 
 
 
