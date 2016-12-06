@@ -3,9 +3,9 @@
 
 function init() {
   var mapOptions = {
-    center: new google.maps.LatLng(-35.231571, 174.261067), // Baja, Mexico 
+    center: new google.maps.LatLng(-35.231571, 174.261067), // Bay of Islands, New Zealand  
     mapTypeId: google.maps.MapTypeId.TERRAIN,
-    zoom: 10,
+    zoom: 12,
     panControl: false,
     streetViewControl: false,
     mapTypeControl: true,
