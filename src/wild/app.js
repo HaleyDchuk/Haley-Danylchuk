@@ -74,12 +74,14 @@ router.get('/backpacking', function(req, res){
 	}); 
 }); 
 
+var destinationFilter; 
 router.get('/destinations', function(req, res){
 	
 	var destType = req.query.typeFiltered; 
+	destinationFilter = destType; 
 	console.log("destination type:"); 
 	console.log(destType); 
-	if(destType == undefined){
+	if(destinationFilter == undefined){
 	DestinationList.find(function(err, destinationList, count){
 		console.log("all of the destinations not filtered: "); 
 		console.log(destinationList); 
