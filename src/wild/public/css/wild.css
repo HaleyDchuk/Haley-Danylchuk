@@ -31,8 +31,9 @@
 
 #map {
 	 
-        width: 800px;
-        height: 800px;
+        width: 500px;
+        height: 500px;
+	padding-left: 115px; 
       //position: absolute;
         //top: 0;
         //left: 0; 
