@@ -18,6 +18,11 @@
 		background-color: #fff;
 	}
 
+#monthDestination{
+	padding-left: 115px; 
+	background: none; 
+}
+
 .pageIntro{
 	padding-left: 115px; 	
 }
