@@ -63,7 +63,7 @@ function applyData(weatherData) {
   // Write to page
   document.getElementById('temp').textContent = 'Temperature: ' + tempFormatted + '°';
   document.getElementById('hum').textContent = 'Humidity: ' + humidity + '%';
-  document.getElementById('des').textContent = 'Description: ' + description;
+ // document.getElementById('des').textContent = 'Description: ' + description;
       
       
 
