@@ -56,11 +56,11 @@ function applyData(weatherData) {
   var tempFormatted = Math.round(temperature);
   var convert = ((tempFormatted * 9)/5) - 459.67.
   var humidity = weatherData.main.humidity;
-  var description = weatherData.weather.description; 
+//   var description = weatherData.weather.description; 
   // Write to page
   document.getElementById('temp').textContent = 'Temperature: ' + convert + '°';
   document.getElementById('hum').textContent = 'Humidity: ' + humidity + '%';
-  document.getElementById('des').textContent = 'Description: ' + description;
+  //document.getElementById('des').textContent = 'Description: ' + description;
       
       
 
