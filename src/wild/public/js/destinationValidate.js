@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 // 		} else 
 			
 		if(type === 'Kayaking'){
-		event.preventDefault(); 
+		//event.preventDefault(); 
 		//show just kayaking 
 		console.log("kayaking"); 
 		var kay = document.querySelectorAll('div.eachDestination'); 
