@@ -1,4 +1,14 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+	
+	var filterButton = document.getElementById("filterSubmit"); 
+	filterSubmit.addEventListener('click', destinationFilter); 
+	
+	function destinationFilter(event){
+		
+	}
+	
+	
+	
 	//destinations validate 
 	var destinationButton = document.getElementById("destinationSubmit"); 
 	destinationButton.addEventListener('click', destinationValidate); 
