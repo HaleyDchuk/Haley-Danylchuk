@@ -4,15 +4,14 @@
 	var thisClass = "Applied Internet Technology"; 
 	console.log("classes"); 
 	console.log(classes); 
+
 	
+// 	var importantClass = classes.filter(function(class){
+// 		return class.title === thisClass; 
+// 	}); 
 	
-	
-	var importantClass = classes.filter(function(class){
-		return class.title === thisClass; 
-	}); 
-	
-	console.log("AIT"); 
-	console.log(importantClass); 
+// 	console.log("AIT"); 
+// 	console.log(importantClass); 
 	
 
 
