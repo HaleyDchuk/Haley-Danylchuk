@@ -57,12 +57,13 @@ function applyData(weatherData) {
   document.getElementById('hum').textContent = 'Humidity: ' + humidity + '%';
       
   var mainWeather = weatherData.main; 
+       console.log("main weather"); 
+      console.log(mainWeather); 
      
       var weather = mainWeather.filter(function(w){
          return w.main == 'main';    
       });
-      console.log("main weather"); 
-      console.log(weather); 
+     
   
   // Map value accordingly for CSS application
   //var blurExtent = Math.round(humidity/10);
