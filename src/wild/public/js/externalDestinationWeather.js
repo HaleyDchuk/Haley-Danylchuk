@@ -59,11 +59,11 @@ function applyData(weatherData) {
   console.log("CONVERT"); 
   console.log(convert); 
   var humidity = weatherData.main.humidity;
-//   var description = weatherData.weather.description; 
+  var description = weatherData.weather.description; 
   // Write to page
   document.getElementById('temp').textContent = 'Temperature: ' + tempFormatted + '°';
   document.getElementById('hum').textContent = 'Humidity: ' + humidity + '%';
-  //document.getElementById('des').textContent = 'Description: ' + description;
+  document.getElementById('des').textContent = 'Description: ' + description;
       
       
 
