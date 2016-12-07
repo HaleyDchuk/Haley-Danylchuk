@@ -19,7 +19,7 @@
 	}
 
 #monthDestination{
-	padding-left: 115px; 
+	padding-left: 215px; 
 	background: none; 
 }
 
@@ -38,12 +38,12 @@
 
 .pageIntro{
 	//display: inline; 
-	padding-left: 230px; 	
+	padding-left: 215px; 	
 	background: none; 
 }
 
 #month{
-	padding-left: 115px; 
+	padding-left: 215px; 
 	float: none; 
 }
 
@@ -51,7 +51,7 @@
 	 
         width: 100%;
         height: 500px;
-	padding-left: 115px; 
+	padding-left: 215px; 
       //position: absolute;
         //top: 0;
         //left: 0; 
@@ -537,13 +537,13 @@ div.thisForm
 }
 
 #error-message{
-	padding-left: 115px; 
+	padding-left: 215px; 
 	background: yellow; 
 	color: black; 
 }
 
 #error-message-backpack{
-	padding-left: 115px; 
+	padding-left: 215px; 
 	background: yellow; 
 	color: black; 
 }
