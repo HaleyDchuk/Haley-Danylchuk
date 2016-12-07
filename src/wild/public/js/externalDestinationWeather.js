@@ -58,7 +58,7 @@ function applyData(weatherData) {
       
   var mainWeather = weatherData.weather; 
       var weather = mainWeather.filter(function(w){
-         return mainWeather.main == 'main';    
+         return w.main == 'main';    
       });
       
       console.log("main"); 
