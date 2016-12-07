@@ -81,7 +81,7 @@ router.get('/destinations', function(req, res){
 	destinationFilter = destType; 
 	console.log("destination type:"); 
 	console.log(destType); 
-	if(destinationFilter == undefined){
+	//if(destinationFilter == undefined){
 	DestinationList.find(function(err, destinationList, count){
 		console.log("all of the destinations not filtered: "); 
 		console.log(destinationList); 
@@ -89,18 +89,18 @@ router.get('/destinations', function(req, res){
 			destinationList: destinationList
 		}); 
 	}); 
-	} 
-	else{
-		DestinationList.find({"type": destType}, function(err, destinationList, count){
-			console.log("all of the destinations filtered: "); 
-		console.log(destinationList); 
-			res.render('destinations', {
-				destinationList: destinationList
-			}); 
-		});
+	//} 
+// 	else{
+// 		DestinationList.find({"type": destType}, function(err, destinationList, count){
+// 			console.log("all of the destinations filtered: "); 
+// 		console.log(destinationList); 
+// 			res.render('destinations', {
+// 				destinationList: destinationList
+// 			}); 
+// 		});
 		
 		
-	}
+// 	}
 
 }); 
 
