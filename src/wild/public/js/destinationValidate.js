@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		event.preventDefault(); 
 		//show just kayaking 
 		console.log("kayaking"); 
-		var kay = document.getElementByClassName('eachDestination'); 
+		var kay = document.querySelectorAll('div.eachDestination'); 
 		var x; 
 			for(x = 0; x < kay.length; x++) {
 				if(kay[x].type === 'Kayaking'){
