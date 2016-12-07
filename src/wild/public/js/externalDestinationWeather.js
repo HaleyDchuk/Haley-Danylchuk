@@ -52,17 +52,16 @@ function loadContent() {
 
 function applyData(weatherData) {
   // Access humidity value with dot syntax
+  var temperature = weatherData.main.temp; 
   var humidity = weatherData.main.humidity;
+  var description = weatherData.weather.description; 
   // Write to page
+  document.getElementById('temp').textContent = 'Temperature ' + temperature + '°';
   document.getElementById('hum').textContent = 'Humidity: ' + humidity + '%';
+  document.getElementById('des').textContent = description;
       
-  var mainWeather = weatherData.main; 
-       console.log("main weather"); 
-      console.log(mainWeather); 
-     
-      var weather = mainWeather.filter(function(w){
-         return w.main == 'main';    
-      });
+      
+
      
   
   // Map value accordingly for CSS application
