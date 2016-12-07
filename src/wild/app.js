@@ -89,18 +89,18 @@ router.get('/destinations', function(req, res){
 			destinationList: destinationList
 		}); 
 	}); 
-	//} 
-// 	else{
-// 		DestinationList.find({"type": destType}, function(err, destinationList, count){
-// 			console.log("all of the destinations filtered: "); 
-// 		console.log(destinationList); 
-// 			res.render('destinations', {
-// 				destinationList: destinationList
-// 			}); 
-// 		});
+	} 
+	else{
+		DestinationList.find({"type": destType}, function(err, destinationList, count){
+			console.log("all of the destinations filtered: "); 
+		console.log(destinationList); 
+			res.render('destinations', {
+				destinationList: destinationList
+			}); 
+		});
 		
 		
-// 	}
+	}
 
 }); 
 
