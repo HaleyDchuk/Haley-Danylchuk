@@ -52,10 +52,12 @@
 
 #hum{
 	float: none;	
+	padding-left: 115px; 
 }
 
 #temp{
 	float: none; 	
+	padding-left: 115px; 
 }
 
 #map {
