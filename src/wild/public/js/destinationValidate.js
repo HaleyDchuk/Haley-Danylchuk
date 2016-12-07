@@ -4,6 +4,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	filterSubmit.addEventListener('click', destinationFilter); 
 	
 	function destinationFilter(event){
+		var type = document.getElementById("destinationType").value;
+// 		if(type == ""){
+// 		//show all of the destinations 	
+// 		} else 
+			
+		if(type === 'Kayaking'){
+		//show just kayaking 
+			console.log("kayaking"); 
+		} else if(type === 'Backpacking'){
+		//show just backpacking 
+			console.log("backpacking"); 
+		}
 		
 	}
 	
