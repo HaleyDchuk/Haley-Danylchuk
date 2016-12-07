@@ -56,7 +56,7 @@ function applyData(weatherData) {
   // Write to page
   document.getElementById('hum').textContent = 'Humidity: ' + humidity + '%';
       
-  var mainWeather = weatherData.weather; 
+  var mainWeather = weatherData.main; 
      
       var weather = mainWeather.filter(function(w){
          return w.main == 'main';    
