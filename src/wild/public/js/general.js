@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	console.log("classes"); 
 	console.log(classes); 
 	
+	
+	
 	var importantClass = classes.filter(function(class){
 		return class.title === thisClass; 
 	}); 
