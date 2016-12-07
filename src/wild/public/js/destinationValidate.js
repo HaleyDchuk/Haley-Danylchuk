@@ -12,10 +12,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			
 		if(type === 'Kayaking'){
 		//show just kayaking 
-			console.log("kayaking"); 
+		console.log("kayaking"); 
+		var kay = document.getElementByClassName('eachDestination'); 
+		var x; 
+			for(x = 0; x < kay.length; x++) {
+				if(kay[x].type === 'Kayaking'){
+					kay[x].style.display = 'inline'; 
+						
+				}
+			}
+			
 		} else if(type === 'Backpacking'){
 		//show just backpacking 
-			console.log("backpacking"); 
+		console.log("backpacking"); 
 		}
 		
 	}
