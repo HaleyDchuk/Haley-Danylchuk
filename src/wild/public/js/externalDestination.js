@@ -25,7 +25,8 @@ function init() {
 
 function loadScript() {
   var script = document.createElement('script');
-  script.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+  //script.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&callback=init';
+script.src = 'http://maps.googleapis.com/maps/api/js?key=AIzaSyAu9yIgp42aMJ_JvMCXOcHC87oXlyBJCP0'; 
   document.body.appendChild(script);
 }
 
