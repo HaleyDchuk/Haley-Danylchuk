@@ -53,10 +53,10 @@ function loadContent() {
 function applyData(weatherData) {
   // Access humidity value with dot syntax
   var temperature = weatherData.main.temp; 
-  //var tempFormatted = Math.round(temperature);
-  var convert = ((temperature * 9)/5) - 459.67.
+  var tempFormatted = Math.round(temperature);
+  //var convert = ((temperature * 9)/5) - 459.67.
   console.log("CONVERT"); 
-      console.log(convert); 
+  console.log(tempFormatted); 
   var humidity = weatherData.main.humidity;
 //   var description = weatherData.weather.description; 
   // Write to page
