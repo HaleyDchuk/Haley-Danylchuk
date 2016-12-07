@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		//show just kayaking 
 		console.log("kayaking"); 
 		var kay = document.querySelectorAll('div.eachDestination'); 
+			console.log("KAY"); 
+			console.log(kay); 
 		var x; 
 			for(x = 0; x < kay.length; x++) {
 				if(kay[x].type === 'Kayaking'){
