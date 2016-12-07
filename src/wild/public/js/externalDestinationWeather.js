@@ -53,12 +53,12 @@ function loadContent() {
 function applyData(weatherData) {
   // Access humidity value with dot syntax
   var temperature = weatherData.main.temp; 
-  var tempFormatted = Math.round(temperature);
-  var convert = ((tempFormatted * 9)/5) - 459.67.
+  //var tempFormatted = Math.round(temperature);
+  //var convert = ((tempFormatted * 9)/5) - 459.67.
   var humidity = weatherData.main.humidity;
 //   var description = weatherData.weather.description; 
   // Write to page
-  document.getElementById('temp').textContent = 'Temperature: ' + convert + '°';
+  document.getElementById('temp').textContent = 'Temperature: ' + temperature + '°';
   document.getElementById('hum').textContent = 'Humidity: ' + humidity + '%';
   //document.getElementById('des').textContent = 'Description: ' + description;
       
