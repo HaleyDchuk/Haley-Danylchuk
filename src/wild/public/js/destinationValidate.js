@@ -5,8 +5,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	
 	function destinationFilter(event){
 		var type = document.getElementById("destinationType").value;
-		console.log("TYPE"); 
-		console.log(type); 
+		
 // 		if(type == ""){
 // 		//show all of the destinations 	
 // 		} else 
