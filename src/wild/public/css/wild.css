@@ -23,15 +23,23 @@
 	background: none; 
 }
 
-.pageIntro{
-	padding-left: 115px; 	
-}
+
 
 
 .pageDescription{
 	
 	padding-left: 115px; 
 	padding-bottom: 50px; 
+}
+
+.otherPages{
+	padding-top: 175px;	
+}
+
+.pageIntro{
+	//display: inline; 
+	padding-left: 115px; 	
+	background: none; 
 }
 
 #month{
@@ -521,15 +529,7 @@
 	padding-bottom: 40px; 
 }
 
-.otherPages{
-	padding-top: 175px;	
-}
 
-.pageIntro{
-	//display: inline; 
-	padding-left: 115px; 	
-	background: yellow; 
-}
 
 div.thisForm
 {
