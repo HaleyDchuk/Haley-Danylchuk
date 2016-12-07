@@ -50,6 +50,14 @@
 	
 }
 
+#hum{
+	float: none;	
+}
+
+#temp{
+	float: none; 	
+}
+
 #map {
 	 
         width: 100%;
