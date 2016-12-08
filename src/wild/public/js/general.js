@@ -24,15 +24,15 @@ console.log(fil);
 // console.log("Filtered"); 
 // console.log(filtered); 
 
-	var c = ["Applied Internet Technology", "OS", "BASIC ALGORITHMS"]; 
-//console.log(classes.title); 
-	function importantClass(class) {
-		return class == "Applied Internet Technology"; 	
-	}
+// 	var c = ["Applied Internet Technology", "OS", "BASIC ALGORITHMS"]; 
+// //console.log(classes.title); 
+// 	function importantClass(class) {
+// 		return class == "Applied Internet Technology"; 	
+// 	}
 
-	var filtered = ["Applied Internet Technology", "OS", "BASIC ALGORITHMS"].filter(importantClass); 
-	console.log("FILTERED"); 
-	console.log(filtered); 
+// 	var filtered = ["Applied Internet Technology", "OS", "BASIC ALGORITHMS"].filter(importantClass); 
+// 	console.log("FILTERED"); 
+// 	console.log(filtered); 
 
 	
 // 	var importantClass = classes.filter(function(class){
