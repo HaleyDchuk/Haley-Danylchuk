@@ -91,11 +91,39 @@ router.get('/destinations', function(req, res){
 	}); 
 	} 
 	else{
-		DestinationList.find({"type": destType}, function(err, destinationList, count){
+		DestinationList.find({}, function(err, destinationList, count){
 			console.log("all of the destinations filtered: "); 
-			console.log(destinationList); 
+			console.log(destinationList);
+			
+			//select places that have the correct type
+			
+			//for each destination
+// 			var newDest = []; 
+// 			destinationList.forEach(function(destination){
+			
+// 				destination.places.forEach(function(place){
+				
+// 					if(place.type == destinationFilter){
+// 						//add to new list
+// 						newDest.push(destination); 
+// 					}
+// 				});
+			
+// 			})
+			
+			var x; 
+			var y; 
+			for(x = 0; x < destinationList.length; x++){
+				for(y = 0; y < destinationList.length; y++){
+				if(destination.place.type == destinationFilter){
+					newDest.push(destination.place.type); 	
+				}
+				}
+			}
+			console.log("NEW LIST"); 
+			console.log(newDest); 
 			res.render('destinations', {
-				destinationList: destinationList
+				destinationList: newDest
 			}); 
 		});
 		
