@@ -14,7 +14,8 @@
 // console.log("Filtered"); 
 // console.log(filtered); 
 
-
+	console.log("WHAT"); 
+console.log(classes.title); 
 	function importantClass(class) {
 		return class.title === "Applied Internet Technology"; 	
 	}
