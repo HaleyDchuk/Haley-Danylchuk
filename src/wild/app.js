@@ -82,7 +82,7 @@ router.get('/destinations', function(req, res){
 	console.log("destination type:"); 
 	console.log(destType); 
 	if(destinationFilter == undefined || destinationFilter == ""){
-	DestinationList.find(function(err, destinationList, count){
+	DestinationList.find({}, function(err, destinationList, count){
 		console.log("all of the destinations not filtered: "); 
 		console.log(destinationList); 
 		res.render('destinations', {
