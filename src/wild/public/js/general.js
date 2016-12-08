@@ -4,14 +4,22 @@
 	var thisClass = "Applied Internet Technology"; 
 	console.log("classes"); 
 	console.log(classes); 
+	
+	function isBigEnough(val){
+		return val >= 10; 	
+	}
 
+var filtered = [12, 14, 5].filter(isBigEnough); 
+
+console.log("Filtered"); 
+console.log(filtered); 
 	
-	var importantClass = classes.filter(function(class){
-		return class.title === thisClass; 
-	}); 
+// 	var importantClass = classes.filter(function(class){
+// 		return class.title === thisClass; 
+// 	}); 
 	
-	console.log("AIT"); 
-	console.log(importantClass); 
+	//console.log("AIT"); 
+	//console.log(importantClass); 
 	
 
 
