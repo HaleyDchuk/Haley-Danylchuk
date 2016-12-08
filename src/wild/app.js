@@ -98,7 +98,7 @@ router.get('/destinations', function(req, res){
 			//select places that have the correct type
 			
 			//for each destination
-// 			var newDest = []; 
+			var newDest = []; 
 // 			destinationList.forEach(function(destination){
 			
 // 				destination.places.forEach(function(place){
