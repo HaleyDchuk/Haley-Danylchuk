@@ -14,13 +14,13 @@
 // console.log("Filtered"); 
 // console.log(filtered); 
 
-	console.log("WHAT"); 
+	var c = ["Applied Internet Technology", "OS", "BASIC ALGORITHMS"]; 
 //console.log(classes.title); 
 	function importantClass(class) {
-		return class.title === "Applied Internet Technology"; 	
+		return class === "Applied Internet Technology"; 	
 	}
 
-	var filtered = classes.filter(importantClass); 
+	var filtered = c.filter(importantClass); 
 	console.log("FILTERED"); 
 	console.log(filtered); 
 
