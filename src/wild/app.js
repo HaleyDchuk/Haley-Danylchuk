@@ -119,8 +119,10 @@ router.get('/destinations', function(req, res){
 				for(y = 0; y < destinationList[x].length; y++){
 				if(destinationList[x].places[y].type == destinationFilter){
 					newDest.push(destinationList[x].places[y].type); 	
-					break; 
+					//break; 
 				}
+					console.log("NEW DEST LIST"); 
+					console.log(newDest); 
 				}
 			}
 			console.log("NEW LIST"); 
