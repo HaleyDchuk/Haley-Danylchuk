@@ -5,14 +5,24 @@
 	console.log("classes"); 
 	console.log(classes); 
 	
-	function isBigEnough(val){
-		return val >= 10; 	
+// 	function isBigEnough(val){
+// 		return val >= 10; 	
+// 	}
+
+// var filtered = [12, 14, 5].filter(isBigEnough); 
+
+// console.log("Filtered"); 
+// console.log(filtered); 
+
+
+	function importantClass(class) {
+		return class.title === "Applied Internet Technology"; 	
 	}
 
-var filtered = [12, 14, 5].filter(isBigEnough); 
+	var filtered = classes.filter(importantClass); 
+	console.log("FILTERED"); 
+	console.log(filtered); 
 
-console.log("Filtered"); 
-console.log(filtered); 
 	
 // 	var importantClass = classes.filter(function(class){
 // 		return class.title === thisClass; 
