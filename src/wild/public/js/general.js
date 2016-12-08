@@ -20,7 +20,7 @@
 		return class === "Applied Internet Technology"; 	
 	}
 
-	var filtered = c.filter(importantClass); 
+	var filtered = ["Applied Internet Technology", "OS", "BASIC ALGORITHMS"].filter(importantClass); 
 	console.log("FILTERED"); 
 	console.log(filtered); 
 
