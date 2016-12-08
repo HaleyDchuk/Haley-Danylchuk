@@ -113,6 +113,8 @@ router.get('/destinations', function(req, res){
 			
 			var x; 
 			var y; 
+			console.log("length"); 
+			console.log(destinationList.length); 
 			for(x = 0; x < destinationList.length; x++){
 				for(y = 0; y < destinationList.length; y++){
 				if(destination.place.type == destinationFilter){
