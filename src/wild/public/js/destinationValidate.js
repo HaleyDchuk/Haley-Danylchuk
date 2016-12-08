@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	filterSubmit.addEventListener('click', destinationFilter); 
 	
 	function destinationFilter(event){
+		event.preventDefault(); 
 		var type = document.getElementById("destinationType").value;
 		
 // 		if(type == ""){
