@@ -4,6 +4,16 @@
 	var thisClass = "Applied Internet Technology"; 
 	console.log("classes"); 
 	console.log(classes); 
+
+var numbers = [4, 9, 16, 25];
+
+function double(val){
+	return val * 2; 	
+}
+
+var fil = numbers.map(double); 
+console.log("using map"); 
+console.log(fil); 
 	
 // 	function isBigEnough(val){
 // 		return val >= 10; 	
