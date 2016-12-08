@@ -93,7 +93,7 @@ router.get('/destinations', function(req, res){
 	else{
 		DestinationList.find({"type": destType}, function(err, destinationList, count){
 			console.log("all of the destinations filtered: "); 
-		console.log(destinationList); 
+			console.log(destinationList); 
 			res.render('destinations', {
 				destinationList: destinationList
 			}); 
