@@ -117,8 +117,8 @@ router.get('/destinations', function(req, res){
 			console.log(destinationList.length); 
 			for(x = 0; x < destinationList.length; x++){
 				for(y = 0; y < destinationList.length; y++){
-				if(destination.place.type == destinationFilter){
-					newDest.push(destination.place.type); 	
+				if(destinationList.place.type == destinationFilter){
+					newDest.push(destinationList.place.type); 	
 				}
 				}
 			}
