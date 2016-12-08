@@ -14,6 +14,17 @@ function double(val){
 var fil = numbers.map(double); 
 console.log("using map"); 
 console.log(fil); 
+
+
+var names = ['a', 'b', 'c'];
+
+function add(letter){
+	return letter + 'g'; 	
+}
+
+var fill = names.map(add); 
+console.log("map letters"); 
+console.log(fill); 
 	
 // 	function isBigEnough(val){
 // 		return val >= 10; 	
