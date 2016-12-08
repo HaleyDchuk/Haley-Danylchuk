@@ -115,7 +115,7 @@ router.get('/destinations', function(req, res){
 			var y; 
 			console.log("length"); 
 			console.log(destinationList.length); 
-			console.log(destinationList.places.type); 
+			console.log(destinationList.places[0].type); 
 			for(x = 0; x < destinationList.length; x++){
 				for(y = 0; y < destinationList[x].length; y++){
 					console.log("IDK WHAT THIS IS"); 
