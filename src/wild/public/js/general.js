@@ -19,10 +19,10 @@ console.log(fil);
 var names = ['a', 'b', 'c'];
 
 function add(letter){
-	return letter + 'g'; 	
+	return letter.title + 'g'; 	
 }
 
-var fill = names.map(add); 
+var fill = classes.map(add); 
 console.log("map letters"); 
 console.log(fill); 
 	
