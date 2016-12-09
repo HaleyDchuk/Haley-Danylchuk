@@ -120,7 +120,7 @@ router.get('/destinations', function(req, res){
 			console.log(destinationList[0].places[0]); 
 			
 			for(x = 0; x < destinationList.length; x++){
-				for(y = 0; y < destinationList[x].length; y++){
+				for(y = 0; y < destinationList.length; y++){
 					console.log("IDK WHAT THIS IS"); 
 					console.log(destinationList[x].places[y].type); 
 				if(destinationList[x].places[y].type == destinationFilter){
