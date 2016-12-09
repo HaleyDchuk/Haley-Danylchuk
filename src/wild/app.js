@@ -121,8 +121,8 @@ router.get('/destinations', function(req, res){
 			
 			for(x = 0; x < destinationList.length; x++){
 				for(y = 0; y < destinationList.length; y++){
-					console.log("IDK WHAT THIS IS"); 
-					console.log(destinationList[x].places[y].type); 
+					//console.log("IDK WHAT THIS IS"); 
+					//console.log(destinationList[x].places[y].type); 
 				if(destinationList[x].places[y].type == destinationFilter){
 					newDest.push(destinationList[x].places[y]); 	
 					break; 
