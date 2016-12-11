@@ -7,11 +7,21 @@
 
 
 	function thisFunction(letter){
-	return letter.title == "Applied Internet Technology"; 	
-}
+		return letter.title == "Applied Internet Technology"; 	
+	}
 var work = classes.filter(thisFunction); 
 console.log("PLEASE WORK"); 
 console.log(work); 
+
+	function makingFooter(info){
+		return info.title; 
+	}
+
+	var classTitle = work.map(makingFooter); 
+console.log("CLASS TITLE); 
+	    console.log(classTitle); 
+
+	
 // 	function getClass(class){
 // 	return class.title == "Applied Internet Technology"; 	
 // }
