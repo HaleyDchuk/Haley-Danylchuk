@@ -28,6 +28,15 @@ console.log(work);
 	var classSection = work.map(getSection); 
 console.log(classSection); 
 
+	function getProfessor(info){
+		var name = "Professor "; 
+		name += info.professor; 
+		return name; 
+	}
+
+var classProfessor = work.map(getProfessor); 
+console.log(classProfessor); 
+
 	
 // 	function getClass(class){
 // 	return class.title == "Applied Internet Technology"; 	
