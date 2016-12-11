@@ -18,8 +18,15 @@ console.log(work);
 	}
 
 	var classTitle = work.map(makingFooter); 
-console.log("CLASS TITLE"); 
-	    console.log(classTitle); 
+	console.log("CLASS TITLE"); 
+	console.log(classTitle); 
+
+	function getSection(info){
+		return info.section; 	
+	}
+
+	var classSection = work.map(getSection); 
+console.log(classSection); 
 
 	
 // 	function getClass(class){
