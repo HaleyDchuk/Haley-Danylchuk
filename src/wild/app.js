@@ -124,7 +124,15 @@ router.get('/destinations', function(req, res){
 					console.log("IDK WHAT THIS IS"); 
 					console.log(destinationList[x].places[y].type); 
 				if(destinationList[x].places[y].type == destinationFilter){
-					newDest.push(destinationList[x].places[y]); 	
+					var newDestinationObject = {
+						destinationList[x].places[y].type,
+						destinationList[x].places[y].location,
+						destinationList[x].places[y].description, 
+						destinationList[x].places[y].url
+						
+					}
+					//newDest.push(destinationList[x].places[y]); 	
+					newDest.push(newDestinationObject); 
 					break; 
 				}
 					console.log("NEW DEST LIST"); 
