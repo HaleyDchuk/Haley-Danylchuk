@@ -37,6 +37,9 @@ console.log(classSection);
 var classProfessor = work.map(getProfessor); 
 console.log(classProfessor); 
 
+var footerString = classTitle + " " + classSection + " " + classProfessor; 
+console.log(footerString); 
+
 	
 // 	function getClass(class){
 // 	return class.title == "Applied Internet Technology"; 	
