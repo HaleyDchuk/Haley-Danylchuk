@@ -149,7 +149,8 @@ router.get('/destinations', function(req, res){
 			console.log("NEW LIST"); 
 			console.log(newDest); 
 			res.render('destinations', {
-				destinationList: newDest
+				//destinationList: newDest
+				newDest: newDest
 			}); 
 		});
 		
