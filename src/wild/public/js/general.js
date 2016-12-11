@@ -55,33 +55,33 @@ foot.innerHTML = footerString;
 	//console.log("classes"); 
 	//console.log(classes); 
 
-var numbers = [4, 9, 16, 25];
+// var numbers = [4, 9, 16, 25];
 
-function double(val){
-	return val * 2; 	
-}
-
-var fil = numbers.map(double); 
-console.log("using map"); 
-console.log(fil); 
-
-
-var names = ['a', 'b', 'c'];
-
-function add(letter){
-	return letter.title + 'g'; 	
-}
-
-// function thisFunction(letter){
-// 	return letter.title == "Applied Internet Technology"; 	
+// function double(val){
+// 	return val * 2; 	
 // }
-// var work = classes.filter(thisFunction); 
-// console.log("PLEASE WORK"); 
-// console.log(work); 
 
-var fill = classes.map(add); 
-console.log("map letters"); 
-console.log(fill); 
+// var fil = numbers.map(double); 
+// console.log("using map"); 
+// console.log(fil); 
+
+
+// var names = ['a', 'b', 'c'];
+
+// function add(letter){
+// 	return letter.title + 'g'; 	
+// }
+
+// // function thisFunction(letter){
+// // 	return letter.title == "Applied Internet Technology"; 	
+// // }
+// // var work = classes.filter(thisFunction); 
+// // console.log("PLEASE WORK"); 
+// // console.log(work); 
+
+// var fill = classes.map(add); 
+// console.log("map letters"); 
+// console.log(fill); 
 	
 // 	function isBigEnough(val){
 // 		return val >= 10; 	
