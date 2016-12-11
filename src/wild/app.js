@@ -140,7 +140,7 @@ router.get('/destinations', function(req, res){
 					};
 					//newDest.push(destinationList[x].places[y]); 	
 					newDest.push(newDestinationObject); 
-					break; 
+					//break; 
 				}
 					console.log("NEW DEST LIST"); 
 					console.log(newDest); 
