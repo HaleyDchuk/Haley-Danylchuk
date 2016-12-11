@@ -134,8 +134,8 @@ router.get('/destinations', function(req, res){
 // 						destinationList[x].places[y].url
 						
 // 					}
-					//newDest.push(destinationList[x].places[y]); 	
-					newDest.push(newDestinationObject); 
+					newDest.push(destinationList[x].places[y]); 	
+					//newDest.push(newDestinationObject); 
 					break; 
 				}
 					console.log("NEW DEST LIST"); 
