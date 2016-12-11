@@ -16,7 +16,7 @@
 	//console.log("classes"); 
 	//console.log(classes); 
 
-//var numbers = [4, 9, 16, 25];
+var numbers = [4, 9, 16, 25];
 
 function double(val){
 	return val * 2; 	
