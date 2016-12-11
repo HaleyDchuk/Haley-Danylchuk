@@ -18,7 +18,7 @@ console.log(work);
 	}
 
 	var classTitle = work.map(makingFooter); 
-console.log("CLASS TITLE); 
+console.log("CLASS TITLE"); 
 	    console.log(classTitle); 
 
 	
