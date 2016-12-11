@@ -123,14 +123,17 @@ router.get('/destinations', function(req, res){
 				for(y = 0; y < destinationList[x].places.length; y++){
 					console.log("IDK WHAT THIS IS"); 
 					console.log(destinationList[x].places[y].type); 
+					console.log(destinationList[x].places[y].location);
+					console.log(destinationList[x].places[y].description);
+					console.log(destinationList[x].places[y].url);
 				if(destinationList[x].places[y].type == destinationFilter){
-					var newDestinationObject = {
-						destinationList[x].places[y].type,
-						destinationList[x].places[y].location,
-						destinationList[x].places[y].description, 
-						destinationList[x].places[y].url
+// 					var newDestinationObject = {
+// 						destinationList[x].places[y].type,
+// 						destinationList[x].places[y].location,
+// 						destinationList[x].places[y].description, 
+// 						destinationList[x].places[y].url
 						
-					}
+// 					}
 					//newDest.push(destinationList[x].places[y]); 	
 					newDest.push(newDestinationObject); 
 					break; 
