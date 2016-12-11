@@ -22,7 +22,7 @@ console.log(work);
 	console.log(classTitle); 
 
 	function getSection(info){
-		return info.section; 	
+		return "Section: " + info.section; 	
 	}
 
 	var classSection = work.map(getSection); 
