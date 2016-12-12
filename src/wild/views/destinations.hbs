@@ -67,7 +67,26 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 </div>
 {{/each}}
 </div> 
+
+
+<div class = 'items'> 
+{{#each newDest}}
+
+{{#each newDestinationObject}}
+<div class = 'eachDestination'> 
+<p> {{this.type}} {{this.location}}  </p>
+<img src = {{this.url}} style="width:305px;height:210px;"> 
+<p id = "descript"> {{this.description}} </p>
+{{/each}}
+</div>
+{{/each}}
 </div> 
+
+
+
+
+
+
 
 <br> 
 <br> 
@@ -96,7 +115,7 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 <script type="text/javascript" src="../js/externalDestinationWeather.js"></script> 
 <script type="text/javascript" src="../js/destinationValidate.js"></script> 
 
-
+</div> 
 
 
 
