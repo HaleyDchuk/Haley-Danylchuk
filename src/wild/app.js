@@ -99,6 +99,7 @@ router.get('/destinations', function(req, res){
 			
 			//for each destination
 			var newDest = []; 
+			//var destinationList = []; 
 // 			destinationList.forEach(function(destination){
 			
 // 				destination.places.forEach(function(place){
@@ -132,6 +133,7 @@ router.get('/destinations', function(req, res){
 					var filteredUrl = destinationList[x].places[y].url;
 				if(destinationList[x].places[y].type == destinationFilter){
 					var newDestinationObject = {
+//var places = {
 						location: destinationList[x].places[y].location,
 						description: destinationList[x].places[y].description,
 						url:  destinationList[x].places[y].url,
@@ -140,17 +142,19 @@ router.get('/destinations', function(req, res){
 					};
 					//newDest.push(destinationList[x].places[y]); 	
 					newDest.push(newDestinationObject); 
+					//destinationList.push(places); 
 					//break; 
 				}
 					console.log("NEW DEST LIST"); 
 					console.log(newDest); 
+					//console.log(destinationList); 
 				}
 			}
 			console.log("NEW LIST"); 
 			console.log(newDest); 
 			res.render('destinations', {
-				//destinationList: newDest
-				newDest: newDest
+				destinationList: newDest
+				//newDest: newDest
 			}); 
 		});
 		
