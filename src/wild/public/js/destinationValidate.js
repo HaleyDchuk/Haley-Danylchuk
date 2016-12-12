@@ -11,11 +11,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		console.log(event); 
 		 
 		var dLocation = document.getElementById('destinationLocation').value; 
+		var dType = document.getElementById('destType').value; 
 
 		var dDescription = document.getElementById('destinationDescription').value; 
 		var dUrl = document.getElementById('destinationUrl').value; 
 
-		if(dLocation == "" || dDescription == "" || dUrl == ""){
+		if(dLocation == "" || dDescription == "" || dUrl == "" || dType == "" ){
 			event.preventDefault(); 
 			console.log("we made it in the if for destination page!"); 
 			var destinationError = document.getElementById('error-message-destination'); 
@@ -27,6 +28,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 			
 
+		} 
+		else if(dType == 'kayaking' || dType == 'backpacking'){
+			event.preventDefault(); 
+			var destinationError = document.getElementById('error-message-dest'); 
+			destinationError.innerHTML = "Please capitalize the type"; 
+			var element = document.getElementById('error-message-destination').style.display = "inline";
 		}
 	}
 
