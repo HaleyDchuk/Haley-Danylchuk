@@ -55,6 +55,8 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 
 <p id = "error-message-destination"> </p>
 
+{{destinationList}}
+
 <div class = 'items'> 
 {{#each destinationList}}
 
@@ -68,12 +70,9 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 {{/each}}
 </div> 
 
-{{#each newDest}}
-<p> {{places.type}} {{places.location}}  </p>
-<img src = {{places.url}} style="width:305px;height:210px;"> 
-<p> {{places.description}} </p>
- 
-{{/each}}
+{{newDest}}
+
+
 
 <!-- 
 
