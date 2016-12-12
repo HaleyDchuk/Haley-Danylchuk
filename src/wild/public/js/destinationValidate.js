@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		 
 		var dLocation = document.getElementById('destinationLocation').value; 
 		var dType = document.getElementById('destType').value; 
-
+		var filterDestinationType = document.getElementById('destinationType').value; 
 		var dDescription = document.getElementById('destinationDescription').value; 
 		var dUrl = document.getElementById('destinationUrl').value; 
 
@@ -32,6 +32,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		else if(dType == 'kayaking' || dType == 'backpacking'){
 			event.preventDefault(); 
 			var destinationError = document.getElementById('error-message-dest'); 
+			destinationError.innerHTML = "Please capitalize the type"; 
+			var element = document.getElementById('error-message-destination').style.display = "inline";
+		} else if (filterDestinationType == 'kayaking' || filterDestinationType == 'backpacking'){
+			event.preventDefault(); 
+			var destinationError = document.getElementById('error-message-d'); 
 			destinationError.innerHTML = "Please capitalize the type"; 
 			var element = document.getElementById('error-message-destination').style.display = "inline";
 		}
