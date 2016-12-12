@@ -34,12 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			var destinationError = document.getElementById('error-message-dest'); 
 			destinationError.innerHTML = "Please capitalize the type"; 
 			var element = document.getElementById('error-message-destination').style.display = "inline";
-		} else if (filterDestinationType == 'kayaking' || filterDestinationType == 'backpacking'){
-			event.preventDefault(); 
-			var destinationError = document.getElementById('error-message-d'); 
-			destinationError.innerHTML = "Please capitalize the type"; 
-			var element = document.getElementById('error-message-destination').style.display = "inline";
-		}
+		} 
 	}
 
 
