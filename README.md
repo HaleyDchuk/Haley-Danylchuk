@@ -7,18 +7,19 @@ WILD
 Overview: 
 
 WILD is a web application that provides users with an equipment list 
-to go backpacking. Once a user is logged in, he or she
-keep track of the equipment they already own, as well as what equipment 
-they still need to buy. They can also add personal items to the list 
-that they wish to take that are not necessarily required. The site will 
-have pictures next to each piece of required equipment to offer clearity 
-for first time adventure seekers. 
+to go backpacking or sea kayaking, as well as a list of destinations. 
+On on kayaking page, users can view a list of required equipment, as well 
+as add equipment to that list. The same goes for the backpacking page. 
 
-WILD will also have a page of recommended places to backpack and sea-kayak. 
-The user can add destinations to this list as he or she wishes. 
+On the destinations page, the user can add destinations to the list, 
+as well as filter destinations that are specifically for backpacking or 
+kayaking. When filtering, the form is case sensitive so please use 'Backpacking'
+or 'Kayaking'. Same for adding a destination, in the type input field, please use 
+'Backpacking' or 'Kayaking'. Also on this page the user can view a destination of 
+the month, view a map of this destination, as well as the current temperature and 
+humidity of this destination. 
 
-The last feature of WILD will be a place users can start recording travel 
-plans. 
+ 
 
 Data Model: 
 
@@ -72,16 +73,16 @@ Site map:
 Hand drawn 
 
 User Stories: 
-1. as a user, I can view a required equipment list for kayaking 
+1. as a user, I can view an equipment list for kayaking 
 2. as a user, I can add items the kayaking equipment list  
-3. as a user, I can view a required equipment list for backpacking 
+3. as a user, I can view an equipment list for backpacking 
 4. as a user, I can add items the backpacking equipment list  
 5. as a user, I can view a list of destinations for kayaking or backpacking 
 6. as a user, I can add destinations to that list
 7. as a user, I can filter the list of destinations to only show destinations for 
 kayaking or backpacking 
 8. as a user, I can view a 'destination of the month', see a map of this destination, as well 
-as the current temperature and humidity 
+as the current temperature and humidity of this destination 
 
 Reasearch Topics: 
 
@@ -91,10 +92,18 @@ Reasearch Topics:
 - pulls the whole site together, makes it more visually appealing 
 and easy to navigate 
 - do not have a specific Bootstrap theme in mind yet 
+- homepage carousel from Cluster - Creative Portfolio Template 
+- use bootstrap grid feature to style the forms  
 
 (4 points) Perform client side form validation using custom JavaScript 
 - errors 
+- each page, kayaking, backpacking, and destinations has its own js file 
+that does not let the user add to a form if all of the fields are not filled out 
 
+(1 point) Google Maps 
+- uses API to display a map of the destination of the month 
 
+(1 point) Weather API 
+- displays the current temperature and current humidity of the destination of the month 
 
 
