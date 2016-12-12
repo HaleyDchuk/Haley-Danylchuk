@@ -84,9 +84,9 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 --> 
 
 {{#each newDest}}
-<p> {{this.type}} {{this.location}}  </p>
-<img src = {{this.url}} style="width:305px;height:210px;"> 
-<p id = "descript"> {{this.description}} </p>
+<p> {{newDestinationObject.type}} {{newDestinationObject.location}}  </p>
+<img src = {{newDestinationObject.url}} style="width:305px;height:210px;"> 
+<p> {{newDestinationObject.description}} </p>
  
 {{/each}}
 
