@@ -59,7 +59,6 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 
 <div class = 'items'> 
 {{#each destinationList}}
-
 {{#each places}}
 <div class = 'eachDestination'> 
 <p> {{this.type}} {{this.location}}  </p>
@@ -70,33 +69,14 @@ URL:         <input type = 'text' id = 'destinationUrl' name = 'destinationUrl'>
 {{/each}}
 </div> 
 
-{{newDest}}
-{{newDest.newDestinationObject}}
-{{newDest.description}}
-
-
-
-<!-- 
-
 {{#each newDest}}
-<p> {{newDestinationObject.type}} {{newDestinationObject.location}}  </p>
-<img src = {{newDestinationObject.url}} style="width:305px;height:210px;"> 
-<p> {{newDestinationObject.description}} </p>
- 
-{{/each}}
-<div class = 'items'> 
-{{#each newDest}}
-
-{{#each newDestinationObject}}
-<div class = 'eachDestination'> 
-<p> {{this.type}} {{this.location}}  </p>
-<img src = {{this.url}} style="width:305px;height:210px;"> 
-<p id = "descript"> {{this.description}} </p>
-{{/each}}
-</div>
-{{/each}}
+<div> this: 
+{{this}}
 </div> 
---> 
+{{/each}}
+
+
+
 
 
 
