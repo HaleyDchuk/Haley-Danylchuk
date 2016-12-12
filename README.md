@@ -22,39 +22,48 @@ plans.
 
 Data Model: 
 
-WILD will store users, lists, and items. 
-- User logs in 
-- Required equipment list provided, user can check off equipment as they 
-pack it; user can add equipment to the list 
-- Recommended places to go provided, user can add to the list 
-- User can add create a diary of his or her travel plans 
+WILD will store kayakLists, backpackLists, and destinationLists. 
+- by clicking on kayaking, backpacking, or destination tab in the navigation bar, user will 
+be taken to a new page that either shows a list of required equipment that they will 
+need for their trip, which they can add to, or a list of destinations, which they can also add to 
+- user can also filter destinations depending if they are meant for a kayaking trip or backpacking trip
+- when filtering and adding a new destination, type is case sensitive; use Kayaking or Backpacking 
 
-var User = new mongoose.Schema({
-  //not exactly sure how to make user login with username and password 
-  //will figure it out though 
+var KayakItem = new mongoose.Schema({
+	name: String, 
+	quantity: Number, 
+	price: String, 
+	description: String, 
+	url: String 
 }); 
 
-var EquipmentItem = new mongoose.Schema({
-  name: String, 
-  quantity: Number, 
-  checked: Boolean
+var KayakList = new mongoose.Schema({
+	kayakEquipment: [KayakItem]
 }); 
 
-var EquimentList = new mongoose.Schema({
-  user: //user that logged in has control over this list 
-  name: String, 
-  items: [EquipmentItem]
+var BackpackItem = new mongoose.Schema({
+	name: String, 
+	quantity: Number, 
+	price: String, 
+	description: String, 
+	url: String 
 }); 
 
-var DestinationItem = new mongoose.Schema({
-  location: String, 
-  description: String 
-});
+var BackpackList = new mongoose.Schema({
+	backpackEquipment: [BackpackItem]
+}); 
+
+var Destination = new mongoose.Schema({
+	location: String, 
+	description: String, 
+	url: String, 
+	type: String
+}); 
 
 var DestinationList = new mongoose.Schema({
-  name: String, 
-  place: [DestinationItem]
-});
+	places: [Destination]
+}); 
+
 
 Wireframes: 
 Hand drawn 
@@ -63,13 +72,16 @@ Site map:
 Hand drawn 
 
 User Stories: 
-1. as a user, I can login 
-2. as a user, I can view a required equipment list 
-3. as a user, I can check things off that list 
-4. as a user, I can add items to that list 
-5. as a user, I can view a recommended destinations list 
+1. as a user, I can view a required equipment list for kayaking 
+2. as a user, I can add items the kayaking equipment list  
+3. as a user, I can view a required equipment list for backpacking 
+4. as a user, I can add items the backpacking equipment list  
+5. as a user, I can view a list of destinations for kayaking or backpacking 
 6. as a user, I can add destinations to that list
-
+7. as a user, I can filter the list of destinations to only show destinations for 
+kayaking or backpacking 
+8. as a user, I can view a 'destination of the month', see a map of this destination, as well 
+as the current temperature and humidity 
 
 Reasearch Topics: 
 
@@ -80,9 +92,8 @@ Reasearch Topics:
 and easy to navigate 
 - do not have a specific Bootstrap theme in mind yet 
 
-(6 points) Integrate user authentification 
-- login with username and password 
-- so that the site is unique for each user who visits it 
+(4 points) Perform client side form validation using custom JavaScript 
+- errors 
 
 
 
