@@ -1,40 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 	
-// 	var filterButton = document.getElementById("filterSubmit"); 
-// 	filterSubmit.addEventListener('click', destinationFilter); 
-	
-// 	function destinationFilter(event){
-// 		event.preventDefault(); 
-// 		var type = document.getElementById("destinationType").value;
-		
-// // 		if(type == ""){
-// // 		//show all of the destinations 	
-// // 		} else 
-			
-// 		if(type === 'Kayaking'){
-// 		//event.preventDefault(); 
-// 		//show just kayaking 
-// 		console.log("kayaking"); 
-// 		var kay = document.querySelectorAll('div.eachDestination'); 
-// 			console.log("KAY"); 
-// 			console.log(kay); 
-// 		var x; 
-// 			for(x = 0; x < kay.length; x++) {
-// 				if(kay[x].type === 'Kayaking'){
-// 					kay[x].style.display = 'inline'; 
-						
-// 				}
-// 			}
-			
-// 		} else if(type === 'Backpacking'){
-// 		//show just backpacking 
-// 		console.log("backpacking"); 
-// 		}
-		
-// 	}
-	
-	
-	
+
 	//destinations validate 
 	var destinationButton = document.getElementById("destinationSubmit"); 
 	destinationButton.addEventListener('click', destinationValidate); 
