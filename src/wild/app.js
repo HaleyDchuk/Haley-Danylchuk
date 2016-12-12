@@ -91,69 +91,11 @@ router.get('/destinations', function(req, res){
 	}); 
 	} 
 	else{
-		DestinationList.find({}, function(err, destinationList, count){
+		DestinationList.find({'places.type': destType}, function(err, destinationList, count){
 			console.log("all of the destinations filtered: "); 
 			console.log(destinationList);
-			
-			//select places that have the correct type
-			
-			//for each destination
-			var newDest = []; 
-			//var destinationList = []; 
-// 			destinationList.forEach(function(destination){
-			
-// 				destination.places.forEach(function(place){
-				
-// 					if(place.type == destinationFilter){
-// 						//add to new list
-// 						newDest.push(destination); 
-// 					}
-// 				});
-			
-// 			})
-			
-			var x; 
-			var y; 
-			console.log("length"); 
-			console.log(destinationList.length); 
-			console.log("other length"); 
-			console.log(destinationList[0].length); 
-			console.log(destinationList[0].places.length); 
-			
-			for(x = 0; x < destinationList.length; x++){
-				for(y = 0; y < destinationList[x].places.length; y++){
-					console.log("IDK WHAT THIS IS"); 
-					console.log(destinationList[x].places[y].type); 
-					console.log(destinationList[x].places[y].location);
-					console.log(destinationList[x].places[y].description);
-					console.log(destinationList[x].places[y].url);
-					var filteredType = destinationList[x].places[y].type; 
-					var filteredLocation = destinationList[x].places[y].location; 
-					var filteredDescription = destinationList[x].places[y].description; 
-					var filteredUrl = destinationList[x].places[y].url;
-				if(destinationList[x].places[y].type == destinationFilter){
-					var newDestinationObject = {
-//var places = {
-						location: destinationList[x].places[y].location,
-						description: destinationList[x].places[y].description,
-						url:  destinationList[x].places[y].url,
-						type: destinationList[x].places[y].type
-						
-					};
-					//newDest.push(destinationList[x].places[y]); 	
-					newDest.push(newDestinationObject); 
-					//destinationList.push(places); 
-					//break; 
-				}
-					console.log("NEW DEST LIST"); 
-					console.log(newDest); 
-					//console.log(destinationList); 
-				}
-			}
-			console.log("NEW LIST"); 
-			console.log(newDest); 
 			res.render('destinations', {
-				destinationList: newDest
+				destinationList: destinationList
 				//newDest: newDest
 			}); 
 		});
@@ -162,6 +104,54 @@ router.get('/destinations', function(req, res){
 	}
 
 }); 
+			
+			//select places that have the correct type
+			
+			//for each destination
+			var newDest = []; 
+
+			
+// 			var x; 
+// 			var y; 
+// 			console.log("length"); 
+// 			console.log(destinationList.length); 
+// 			console.log("other length"); 
+// 			console.log(destinationList[0].length); 
+// 			console.log(destinationList[0].places.length); 
+			
+// 			for(x = 0; x < destinationList.length; x++){
+// 				for(y = 0; y < destinationList[x].places.length; y++){
+// 					console.log("IDK WHAT THIS IS"); 
+// 					console.log(destinationList[x].places[y].type); 
+// 					console.log(destinationList[x].places[y].location);
+// 					console.log(destinationList[x].places[y].description);
+// 					console.log(destinationList[x].places[y].url);
+// 					var filteredType = destinationList[x].places[y].type; 
+// 					var filteredLocation = destinationList[x].places[y].location; 
+// 					var filteredDescription = destinationList[x].places[y].description; 
+// 					var filteredUrl = destinationList[x].places[y].url;
+// 				if(destinationList[x].places[y].type == destinationFilter){
+// 					var newDestinationObject = {
+// //var places = {
+// 						location: destinationList[x].places[y].location,
+// 						description: destinationList[x].places[y].description,
+// 						url:  destinationList[x].places[y].url,
+// 						type: destinationList[x].places[y].type
+						
+// 					};
+// 					//newDest.push(destinationList[x].places[y]); 	
+// 					newDest.push(newDestinationObject); 
+// 					//destinationList.push(places); 
+// 					//break; 
+// 				}
+// 					console.log("NEW DEST LIST"); 
+// 					console.log(newDest); 
+// 					//console.log(destinationList); 
+// 				}
+// 			}
+// 			console.log("NEW LIST"); 
+// 			console.log(newDest); 
+			
 
 // router.get('/kayaking/addKayaking', function(req, res){
 // 	res.render('add'); 
